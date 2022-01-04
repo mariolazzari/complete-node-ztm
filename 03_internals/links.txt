@@ -1,0 +1,4 @@
+https://github.com/nodejs/node
+http://libuv.org/
+https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
+https://nodejs.org/api/events.html#events_events

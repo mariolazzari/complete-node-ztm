@@ -1,0 +1,5 @@
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in
+https://www.ibm.com/cloud/blog/brief-overview-database-landscape
+https://www.db-fiddle.com/f/ogAiTgZPjwvDxwVHiVK3Ek/0
+https://www.youtube.com/watch?v=KG-mqHoXOXY
+https://www.w3schools.com/sql/exercise.asp?filename=exercise_select1

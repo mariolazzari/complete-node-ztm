@@ -1,7 +1,7 @@
 {
-  "name": "server",
+  "name": "nasa",
   "version": "1.0.0",
-  "description": "",
+  "description": "NASA mission control",
   "main": "server.js",
   "scripts": {
     "watch": "nodemon src/server.js",
@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
     "express": "^4.17.2"
   },
   "devDependencies": {

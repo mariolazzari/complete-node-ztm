@@ -1,0 +1,9 @@
+https://www.mongodb.com/json-and-bson
+https://docs.mongodb.com/manual/tutorial/write-scripts-for-the-mongo-shell/
+https://www.postgresql.org/docs/current/datatype-json.html
+https://en.wikipedia.org/wiki/Object%E2%80%93relational_impedance_mismatch
+https://www.ibm.com/docs/en/cics-ts/5.4?topic=processing-acid-properties-transactions
+https://www.mongodb.com/
+https://www.cyberark.com/what-is/least-privilege/
+https://mongoosejs.com/
+https://steveridout.github.io/

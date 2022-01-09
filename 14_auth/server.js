@@ -28,8 +28,8 @@ app.listen(PORT, () => {
 https
   .createServer(
     {
-      key: fs.readFileSync("key.pem"),
-      cert: fs.readFileSync("cert.pem"),
+      key: fs.readFileSync("cert/key.pem"),
+      cert: fs.readFileSync("cert/cert.pem"),
     },
     app
   )

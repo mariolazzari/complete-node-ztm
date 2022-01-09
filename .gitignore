@@ -2,3 +2,4 @@ node_modules
 09_nasa/server/public
 cert.pem
 key.pem
+.env

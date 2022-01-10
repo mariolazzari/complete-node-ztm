@@ -5,9 +5,11 @@ const express = require("express");
 const helmet = require("helmet");
 const passport = require("passport");
 const { Strategy } = require("passport-google-oauth20");
+const cookieSession = require("cookie-session");
 
 require("dotenv").config();
-const { PORT, CLIENT_ID, CLIENT_SECRET } = process.env;
+const { PORT, CLIENT_ID, CLIENT_SECRET, COOKIE_KEY1, COOKIE_KEY2 } =
+  process.env;
 const AUTH_OPTIONS = {
   clientID: CLIENT_ID,
   clientSecret: CLIENT_SECRET,
@@ -23,6 +25,13 @@ passport.use(new Strategy(AUTH_OPTIONS, verifyCallback));
 
 const app = express();
 app.use(helmet());
+app.use(
+  cookieSession({
+    name: "session",
+    keys: [COOKIE_KEY1, COOKIE_KEY2],
+    maxAge: 24 * 60 * 60 * 1000,
+  })
+);
 app.use(passport.initialize());
 
 // auth
@@ -51,7 +60,7 @@ app.get(
   passport.authenticate("google", {
     failureRedirect: "/failure",
     successRedirect: "/",
-    session: true,
+    session: false,
   }),
   (req, res) => {
     console.log("Google called us back!");
